@@ -4,6 +4,9 @@ on: [push]
 
 jobs:
   build:
+    defaults:
+      run:
+        working-directory: myapp
     runs-on: ubuntu-latest
 
     steps:
